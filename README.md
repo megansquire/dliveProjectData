@@ -52,7 +52,7 @@ File: relationships.csv.gz. Describes the follower/following relationships betwe
 * targetFollowerCount, int, nullable
 
 #### relationships cleaning advisory
-Due to a bug in the cloud storage export routine, NULL fields in the original database were converted to ```"N,```. This string should be interpreted as NULL.
+Due to a [bug](https://cloud.google.com/sql/docs/mysql/known-issues) in the cloud storage export routine, NULL fields in the original database were converted to ```"N,```. This string should be interpreted as NULL.
 
 ## Table: transactions
 File: transactions.csv.gz. There are 1,048,753 transactions in this data set. There are 6 types of transactions:
@@ -89,7 +89,7 @@ For Cash-Out, there are 4 subtypes:
 * balance, bigint, nullable
 
 #### transactions cleaning advisory
-Due to a bug in the cloud storage export routine, NULL fields in the original database were converted to ```"N,```. This string should be interpreted as NULL.
+Due to a [bug](https://cloud.google.com/sql/docs/mysql/known-issues) in the cloud storage export routine, NULL fields in the original database were converted to ```"N,```. This string should be interpreted as NULL.
 
 ## Table: wallets
 File: wallets.csv.gz. We designate a new wallet for each user collection. This is mostly an artifact of early collection when we were capturing wallet data as a standalone item.
