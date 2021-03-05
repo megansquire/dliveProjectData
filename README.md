@@ -2,29 +2,49 @@
 
 This data set is for DLive data collected via the earnings API at https://graphigo.prd.dlive.tv June 2020 - February 2021. 
 
-### users
+## Table: collections
+Data was collected 13 times. 
+
+#### collections columns
+
+## Table: users
 There are 119 users in this data set, divided into three main categories:
 * Streamers. The far-right extremist streamer category consists of 55 individuals or groups who regularly create English-language content and receive donations on the DLive platform. 
 * Mega-Donors. This data set consists of 20 users who have donated in large amounts to the streamers
 * People of Interest. We collected data for an additional 44 people classified as "far-right people of interest"
 
-### wallets
+#### users columns
+
+## Table: wallets
 We designate a new wallet for each user collection. This is mostly an artifact of early collection when we were capturing wallet data as a standalone item.
 
-### transactions
+#### wallet columns
+
+## Table: transactions
 There are 1,048,753 transactions in this data set. There are 6 types of transactions:
 * Cash In (count: 28200)
-* Cash Out (3261)
-* Donation In (965344)
-* Donation Out (49448)
-* Subscription Income (2497)
-* Subscription Paid (3)
+* Cash Out (count: 3261)
+* Donation In (count: 965344)
+* Donation Out (count: 49448)
+* Subscription Income (count: 2497)
+* Subscription Paid (count: 3)
 
 For Cash-Out, there are 4 subtypes:
 * Add to chest
 * CashOut (extract cash)
 * User requested refund
-* Account suspended.
+* Account suspended
 
-### collections
-Data was collected 13 times. Each time data was collected, the full transaction ledger for each user was downloaded.
+#### transactions columns
+
+#### transactions cleaning advisory
+Due to a bug in the cloud storage export routine, NULL fields in the original database were converted to ```"N,```. This string should be changed to NULL.
+
+## Table: relationships
+Describes the follower/following relationships between users.
+
+#### relationships columns
+
+#### relationships cleaning advisory
+Due to a bug in the cloud storage export routine, NULL fields in the original database were converted to ```"N,```. This string should be changed to NULL.
+
