@@ -35,7 +35,7 @@ File: peoplePartnerStatus.csv.gz. Indicates each user's current partner status i
 * partnerStatus, varchar(50), not nullable -- Values: Affiliate, Verified_Partner, None
 
 ## Table: relationships
-File: relationships.csv.gz. Describes the follower/following relationships between users. "Source" is the user doing the following. "Target" is the user being followed.
+File: relationships-aa.csv.gz (also includes -ab, -ac). Describes the follower/following relationships between users. "Source" is the user doing the following. "Target" is the user being followed.
 
 #### relationships columns
 * relationshipID, PK, int, not nullable, auto_increment
@@ -55,7 +55,7 @@ File: relationships.csv.gz. Describes the follower/following relationships betwe
 Due to a [bug](https://cloud.google.com/sql/docs/mysql/known-issues) in the cloud storage export routine, NULL fields in the original database were converted to ```"N,```. This string should be interpreted as NULL.
 
 ## Table: transactions
-File: transactions.csv.gz. There are 1,048,753 transactions in this data set. There are 6 types of transactions:
+File: transactions-aa.csv.gz (also includes -ab, -ac, -ad, -ae). There are 1,048,753 transactions in this data set. There are 6 types of transactions:
 * Cash In (count: 28200)
 * Cash Out (count: 3261)
 * Donation In (count: 965344)
