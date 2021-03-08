@@ -14,7 +14,7 @@ File: collections.csv.gz. Data was collected 13 times.
 File: people.csv.gz. There are 119 users in this data set, divided into three main categories:
 * Streamers. The far-right extremist streamer category consists of 55 individuals or groups who regularly create English-language content and receive donations on the DLive platform. 
 * Mega-Donors. This data set consists of 20 users who have donated in large amounts to the streamers
-* People of Interest. We collected data for an additional 44 people classified as "far-right people of interest"
+* People of Interest. An additional 44 people classified as "far-right people of interest"
 
 #### people columns
 * personID, PK, int, not nullable
