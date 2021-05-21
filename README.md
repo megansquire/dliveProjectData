@@ -2,6 +2,9 @@
 
 This data set is for DLive data collected via the earnings API at https://graphigo.prd.dlive.tv June 2020 - February 2021. 
 
+Please cite as follows:
+Megan Squire (2021). Monetizing Propaganda: How Far-right Extremists Earn Money by Video Streaming. In WebSci ’21: 13th International ACM Conference on Web Science in 2021, June 21–25, 2021. ACM, New York, NY, USA, 10 pages. https://arxiv.org/abs/2105.05929
+
 ## Table: collections
 File: collections.csv.gz. Data was collected 13 times. 
 
