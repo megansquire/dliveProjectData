@@ -90,6 +90,8 @@ For Cash-Out, there are 4 subtypes:
 * descReceiverDisplay, varchar(100), nullable -- derived field
 * amount, bigint, nullable
 * balance, bigint, nullable
+* dateCollected, datetime
+* dateModified, datetime
 
 #### transactions cleaning advisory
 Due to a [bug](https://cloud.google.com/sql/docs/mysql/known-issues) in the cloud storage export routine, NULL fields in the original database were converted to ```"N,```. This string should be interpreted as NULL.
